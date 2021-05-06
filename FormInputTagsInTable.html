@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        form{
+            max-width: 500px;
+    margin: auto; border:  solid 2px; padding-left: 20px; padding: 25px 50px 75px 100px;
+    background-color: rgb(245, 188, 188);
+        }
+        h3{
+            text-align: center;
+            color: red;
+        }
+        button{
+            text-align: center;
+            background-color: slategrey;
+        }
+        h2{
+            color: crimson;
+            text-align: center;
+            height: 25%;
+            width: 25%;
+
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth Task</title>
+</head>
+<body>
+    <h2>Form Tags</h2>
+    <form>
+        <table>
+            <tr>
+                <td></td>
+                <td><h3>Personal Details</h3></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname" placeholder="Enter First Name"> </td>
+                <td></td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lastname" placeholder="Enter Second Name"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>User Password</td>
+                    <td> <input type="password" name="password" placeholder="Enter password "></td>
+                    
+                </tr>
+                <tr>
+                    <td>Contact</td> 
+                    <td><input type="text" id="Contact" name="Contact" maxlength="10"
+                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Enter Contact Number" /></td>
+                
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" name="age" min="18" max="35" ></td>
+                    
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" value="male"> Male &nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name="gender" value="male"> Female</td>
+                   
+                </tr>
+                <tr>
+                    <td>Birth Date</td>
+                    <td> <input type="date" name="bday" placeholder="Enter Birth Date"></td>
+                    
+                </tr>
+                <tr>
+                    <td> Email ID</td>
+                    <td><input type="email" placeholder="Enter Email"></td>
+                    
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><h3>Eductional Qualification</h3></td>
+                </tr>
+                <tr>
+                    <td>Degree</td>
+                    <td><input list="select Degree" name="Degree" placeholder="Select one">
+                        <datalist id="select Degree">
+                            <option value="E&TC"></option>
+                            <option value="Mechanical"></option>
+                            <option value="computer"></option>
+                        </datalist></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td><input type="checkbox" name="vehicle2" value="Car" placeholder="Enter Hobbies"> Playing Chees  <input type="checkbox" name="vehicle3" value="Other"> Playing Cricket</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="message" rows="5" cols="30" placeholder="Enter Address"></textarea></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Select your Height</td>
+                        <td><input type="Number" name="Height"></td>
+                    </tr>
+                    <tr>
+                        <td>Select Resume</td>
+                        <td><input type="file" name="Resume" multiple></td>
+                    </tr>
+                    
+                <tr>
+                    <td><input type="submit" style="background-color: rgb(20, 3, 20); color:white; height: 50px; width: 150px; font-size: 20px;"></td>
+
+                    <td><input type="reset" style="background-color: rgb(20, 3, 20); color:white; height: 50px; width: 150px; font-size: 20px;"></td>
+                </tr>
+        
+        
+        
+        </table>
+    </form>
+</body>
+</html>
